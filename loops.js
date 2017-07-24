@@ -27,4 +27,9 @@ veggies.forEach(function (veggie) {
     console.log(veggie);
 });
 
+// for loops with arrays
+for(var e=0;e<veggies.length;e++){
+    console.log("for"+veggies[e])
+}
+
 

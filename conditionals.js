@@ -19,16 +19,17 @@ if(one == ten || one == 1){
 
 // todo: SWITCH statements
 
-var car = "Ferrari";
+var car = "Tesla";
 
 switch (car){
     case "BMW":
         alert("THE CAR IS A BMW!");
         break;
-    case "Ferrari":
-        alert("THE CAR IS A FERRARI!");
+    case "Teasla":
+        alert("THE CAR IS A TESLA!");
         break;
-
+    default:
+        alert("CARS ARE MACHINES")
 
 
 
