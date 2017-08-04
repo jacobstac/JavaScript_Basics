@@ -21,18 +21,173 @@
     <p id="sayHello"></p>
     <script>
 
-      // var yourName = prompt("What is ypu name? ")
+/*
+      var yourName = prompt("What is ypu name? ")
 
-      //if(yourName != null){
-        //document.getElementById("sayHello").innerHTML = " Hello " + yourName;
-      //} else {
-        //alert("You didnt write a name")
-      //}
+      if(yourName != null){
+        document.getElementById("sayHello").innerHTML = " Hello " + yourName;
+      } else {
+        alert("You didnt write a name")
+      }
+*/
       //---------------------------------------
+
+      //STRINGS:
+
+/*
       var randNum = "hej hej hewasdadasddj jacob";
+
+      document.write(randNum, "<br />");
       document.write("max number is ", randNum.length, "<br />");
       document.write(randNum.indexOf("jacob"), "<br />");
       document.write(randNum.slice(22, 27) + "<br />");
+      document.write(randNum.replace("jacob", "ami"), "<br />");
+      // Split to array:
+      var randNumArray = randNum.split(" ");
+      document.write(randNumArray);
+*/
+      //String To Style
+/*
+      var strToStyle = "Whassap World"
+      document.write(strToStyle.big());
+      document.write(strToStyle.italics());
+      document.write(strToStyle.strike());
+*/
+
+// Conditionals
+
+      // if else
+/*
+      var age = 4;
+
+      if((age >= 2) && (age <= 6)){
+        document.write("gå till dagis");
+      } else if (age > 18) {
+        document.write("gå till UNI");
+      } else {
+        document.write("gå till skolan");
+      }
+*/
+      // Ternary operator:
+/*
+      var age = 5;
+
+      (condition) ? ifTrue : ifFalse
+
+      var canIVote = (age >= 18) ? true : false;
+      document.write(canIVote)
+*/
+      // WHILE LOOP:
+/*
+      var i = 1;
+
+      while(i <= 10){
+        document.write(i + "<br />");
+        i++;
+      }
+*/
+      // DO while
+/*
+      do{
+        var guess = prompt("Gissa siffra mellan  och 20")
+
+
+      }while(guess != 15)
+      alert("Du gissade rätt, 15!!!")
+*/
+      // FOR LOOP
+      // 100% self contained
+/*
+      for(j = 0; j <= 10; j++){
+        if((j % 2) === 0) {
+          document.write(j + " är en jämn siffra"+ "<br />")
+        } else {
+          document.write(j + " är en udda siffra"+ "<br />")
+        }
+
+      }
+*/
+        // FOR IN BLOCK
+/*
+        var kund =  {name : "Jacob", adress : "stockholm", ekonomi : 100 };
+
+        for(k in kund) {
+          document.write(kund[k]+ "<br />")
+        }
+*/
+        // ARRAYS
+/*
+        var Jacob = ["jacob s", "stockholm", "150 kr", "man", "191 cm"];
+        for(k in Jacob){
+          document.write(Jacob[k]+ "<br />");
+        }
+*/
+        // FUNCTIONS
+/*
+        function inArray(arrayToCheck, value){
+          for(i = 0; i <arrayToCheck.length; i++){
+            if(arrayToCheck[i] === value){
+              return true;
+            }
+          }
+          return false;
+        }
+
+        var randArray = [1, 55, 33, 23, 52, 2, 5, 26, 8, 62];
+
+        document.write("in array : ", inArray(randArray, 62), "<br />");
+*/
+/*
+        function times2(num){
+          var var2 = 2;
+
+          return num*var2;
+        }
+
+        function times2(num){
+          return num*3;
+        }
+
+        function multipy(func, num){
+          return(func(num));
+        }
+        document.write(times2(18)+ "<br />")
+
+        // function expressions
+        var triple = function(num){
+          return num*3;
+        }
+        document.write(multipy(triple, 45)+ "<br />")
+*/
+
+        // recevie arguments¨
+
+        function getSum(){
+
+          var sum = 1;
+          for(i=0;i < arguments.length; i++) {
+            sum *= arguments[i];
+
+          }
+          return sum;
+        }
+
+        document.write(getSum(1,2,3,4,5,6)+ "<br />")
+
+        function times2(theArray){
+          var newArray = [];
+          for(i=0;i<theArray.length;i++){
+            newArray.push(theArray[i]*2);
+          }
+          return newArray;
+        }
+        document.write("Array Double= ", times2([1,2,3,4,5]).toString(), "<br />");
+
+
+
+
+
+
 
 
 
