@@ -1,189 +1,188 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script src="EventHandling.js"></script>
+<head>
+  <meta charset="utf-8">
+  <script src="EventHandling.js"></script>
 
-    <style type="text/css">
-      body {font-size: 1.6em;}
-      .hidden {display:none;}
-      .show {display:inline !important;}
-      button {
-        border: 2px solid black; background: #E5E4E2;
-        font-size: .5em; font-weight: bold; color: black;
-        padding: .8em 2em;
-        margin-top: .4em;
-      }
-    </style>
+  <style type="text/css">
+  body {font-size: 1.6em;}
+  .hidden {display:none;}
+  .show {display:inline !important;}
+  button {
+    border: 2px solid black; background: #E5E4E2;
+    font-size: .5em; font-weight: bold; color: black;
+    padding: .8em 2em;
+    margin-top: .4em;
+  }
+  </style>
 
-  </head>
-  <body>
-    <p id="sayHello"></p>
-    <script>
+</head>
+<body>
+  <p id="sayHello"></p>
+  <script>
 
-/*
-      var yourName = prompt("What is ypu name? ")
+  /*
+  var yourName = prompt("What is ypu name? ")
 
-      if(yourName != null){
-        document.getElementById("sayHello").innerHTML = " Hello " + yourName;
-      } else {
-        alert("You didnt write a name")
-      }
+  if(yourName != null){
+  document.getElementById("sayHello").innerHTML = " Hello " + yourName;
+} else {
+alert("You didnt write a name")
+}
 */
-      //---------------------------------------
+//---------------------------------------
 
-      //STRINGS:
+//STRINGS:
 
 /*
-      var randNum = "hej hej hewasdadasddj jacob";
+var randNum = "hej hej hewasdadasddj jacob";
 
-      document.write(randNum, "<br />");
-      document.write("max number is ", randNum.length, "<br />");
-      document.write(randNum.indexOf("jacob"), "<br />");
-      document.write(randNum.slice(22, 27) + "<br />");
-      document.write(randNum.replace("jacob", "ami"), "<br />");
-      // Split to array:
-      var randNumArray = randNum.split(" ");
-      document.write(randNumArray);
+document.write(randNum, "<br />");
+document.write("max number is ", randNum.length, "<br />");
+document.write(randNum.indexOf("jacob"), "<br />");
+document.write(randNum.slice(22, 27) + "<br />");
+document.write(randNum.replace("jacob", "ami"), "<br />");
+// Split to array:
+var randNumArray = randNum.split(" ");
+document.write(randNumArray);
 */
-      //String To Style
+//String To Style
 /*
-      var strToStyle = "Whassap World"
-      document.write(strToStyle.big());
-      document.write(strToStyle.italics());
-      document.write(strToStyle.strike());
+var strToStyle = "Whassap World"
+document.write(strToStyle.big());
+document.write(strToStyle.italics());
+document.write(strToStyle.strike());
 */
 
 // Conditionals
 
-      // if else
+// if else
 /*
-      var age = 4;
+var age = 4;
 
-      if((age >= 2) && (age <= 6)){
-        document.write("gå till dagis");
-      } else if (age > 18) {
-        document.write("gå till UNI");
-      } else {
-        document.write("gå till skolan");
-      }
+if((age >= 2) && (age <= 6)){
+document.write("gå till dagis");
+} else if (age > 18) {
+document.write("gå till UNI");
+} else {
+document.write("gå till skolan");
+}
 */
-      // Ternary operator:
+// Ternary operator:
 /*
-      var age = 5;
+var age = 5;
 
-      (condition) ? ifTrue : ifFalse
+(condition) ? ifTrue : ifFalse
 
-      var canIVote = (age >= 18) ? true : false;
-      document.write(canIVote)
+var canIVote = (age >= 18) ? true : false;
+document.write(canIVote)
 */
-      // WHILE LOOP:
+// WHILE LOOP:
 /*
-      var i = 1;
+var i = 1;
 
-      while(i <= 10){
-        document.write(i + "<br />");
-        i++;
-      }
+while(i <= 10){
+document.write(i + "<br />");
+i++;
+}
 */
-      // DO while
+// DO while
 /*
-      do{
-        var guess = prompt("Gissa siffra mellan  och 20")
+do{
+var guess = prompt("Gissa siffra mellan  och 20")
 
 
-      }while(guess != 15)
-      alert("Du gissade rätt, 15!!!")
+}while(guess != 15)
+alert("Du gissade rätt, 15!!!")
 */
-      // FOR LOOP
-      // 100% self contained
+// FOR LOOP
+// 100% self contained
 /*
-      for(j = 0; j <= 10; j++){
-        if((j % 2) === 0) {
-          document.write(j + " är en jämn siffra"+ "<br />")
-        } else {
-          document.write(j + " är en udda siffra"+ "<br />")
-        }
+for(j = 0; j <= 10; j++){
+if((j % 2) === 0) {
+document.write(j + " är en jämn siffra"+ "<br />")
+} else {
+document.write(j + " är en udda siffra"+ "<br />")
+}
 
-      }
+}
 */
-        // FOR IN BLOCK
+// FOR IN BLOCK
 /*
-        var kund =  {name : "Jacob", adress : "stockholm", ekonomi : 100 };
+var kund =  {name : "Jacob", adress : "stockholm", ekonomi : 100 };
 
-        for(k in kund) {
-          document.write(kund[k]+ "<br />")
-        }
+for(k in kund) {
+document.write(kund[k]+ "<br />")
+}
 */
-        // ARRAYS
+// ARRAYS
 /*
-        var Jacob = ["jacob s", "stockholm", "150 kr", "man", "191 cm"];
-        for(k in Jacob){
-          document.write(Jacob[k]+ "<br />");
-        }
+var Jacob = ["jacob s", "stockholm", "150 kr", "man", "191 cm"];
+for(k in Jacob){
+document.write(Jacob[k]+ "<br />");
+}
 */
-        // FUNCTIONS
+// FUNCTIONS
 /*
-        function inArray(arrayToCheck, value){
-          for(i = 0; i <arrayToCheck.length; i++){
-            if(arrayToCheck[i] === value){
-              return true;
-            }
-          }
-          return false;
-        }
+function inArray(arrayToCheck, value){
+for(i = 0; i <arrayToCheck.length; i++){
+if(arrayToCheck[i] === value){
+return true;
+}
+}
+return false;
+}
 
-        var randArray = [1, 55, 33, 23, 52, 2, 5, 26, 8, 62];
+var randArray = [1, 55, 33, 23, 52, 2, 5, 26, 8, 62];
 
-        document.write("in array : ", inArray(randArray, 62), "<br />");
+document.write("in array : ", inArray(randArray, 62), "<br />");
 */
 /*
-        function times2(num){
-          var var2 = 2;
+function times2(num){
+var var2 = 2;
 
-          return num*var2;
-        }
+return num*var2;
+}
 
-        function times2(num){
-          return num*3;
-        }
+function times2(num){
+return num*3;
+}
 
-        function multipy(func, num){
-          return(func(num));
-        }
-        document.write(times2(18)+ "<br />")
+function multipy(func, num){
+return(func(num));
+}
+document.write(times2(18)+ "<br />")
 
-        // function expressions
-        var triple = function(num){
-          return num*3;
-        }
-        document.write(multipy(triple, 45)+ "<br />")
-*/
-
-        // recevie arguments¨
-/*
-        function getSum(){
-
-          var sum = 1;
-          for(i=0;i < arguments.length; i++) {
-            sum *= arguments[i];
-
-          }
-          return sum;
-        }
-
-        document.write(getSum(1,2,3,4,5,6)+ "<br />")
-
-        function times2(theArray){
-          var newArray = [];
-          for(i=0;i<theArray.length;i++){
-            newArray.push(theArray[i]*2);
-          }
-          return newArray;
-        }
-        document.write("Array Double= ", times2([1,2,3,4,5]).toString(), "<br />");
+// function expressions
+var triple = function(num){
+return num*3;
+}
+document.write(multipy(triple, 45)+ "<br />")
 */
 
+// recevie arguments¨
+/*
+function getSum(){
+
+var sum = 1;
+for(i=0;i < arguments.length; i++) {
+sum *= arguments[i];
+
+}
+return sum;
+}
+
+document.write(getSum(1,2,3,4,5,6)+ "<br />")
+
+function times2(theArray){
+var newArray = [];
+for(i=0;i<theArray.length;i++){
+newArray.push(theArray[i]*2);
+}
+return newArray;
+}
+document.write("Array Double= ", times2([1,2,3,4,5]).toString(), "<br />");
+*/
 
 
 
@@ -193,18 +192,91 @@
 
 
 
-    </script>
-    <!-- JavaScript:void(0)  ser till att sidan inte uppdateras -->
-    <a href="JavaScript:void(0)" onClick="alert('Hello');">Say Hello
-    </a><br />
 
-    <a href="JavaScript:void(0)" onmouseover="openAlert('WOHOOOOfsdfsfOOO');">Say Hello
-    </a><br />
+</script>
+<!-- JavaScript:void(0)  ser till att sidan inte uppdateras -->
+<a href="JavaScript:void(0)" id="test" onClick="alert('Hello');">Say Hello
+</a><br />
 
-    <a href="JavaScript:void(0)"
-    onmouseover="this.style.color = 'red'">Say Hello
-    onmouseover="this.style.color = 'red'">Say Hello
-    </a><br />
+<a href="JavaScript:void(0)" onmouseover="openAlert('WOHOOOOfsdfsfOOO');">Say Hello
+</a><br />
 
-  </body>
+<a href="JavaScript:void(0)"
+onmouseover="this.style.color = 'red'"
+onmousedown="this.text= 'red'">Say Hello
+
+</a><br />
+
+
+
+<input type="text" id="randInput"
+onchange="var dataEntered=document.getElementById('randInput').value;
+alert('user Typed ' + dataEntered)"
+
+<form action="#" id="sampForm">
+  <input id='charInput' type="text">
+
+  <p id="keyData">
+    <!--  Skapar knappar av submit och reset -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form><br />
+
+  <img src="jacob.png" id="logo">
+
+  <!--  Skapar en getLogo knapp-->
+  <button id="logoButton">Get Logo</button>
+
+  <input id="mouseInput" type="text" size="30"><br />
+
+  Mouse X: <input type="text" id="mouseX"><br />
+  Mouse Y: <input type="text" id="mouseY"><br />
+  <!--  -->
+  <script>
+  //  which returns the key or the mousebutton that was clicked-->
+  function getCharacter(event) {
+
+    if(event.which == null){       // for IE
+      return String.fromCharCode(event.KeyCode);
+
+    } else if (event.which != 0 && event.charCode != 0) { // for every other browser
+      return String.fromCharCode(event.which);
+    } else {
+      return null       // clicked on some special char we cant work on
+    }
+
+  }
+  // events to pay attention to
+  document.getElementById('charInput').onkeypress =
+  function(event) {
+    var char = getChar(event || window.event)
+    if(!char) return false;
+
+    document.getElementById('keyData').innerHTML =
+    char + " was clicked";
+    return true;
+  }
+
+
+  document.getElementById('charInput').onfocus = function(event) {
+    document.getElementById('keyData').innerHTML = "Imput gaied stuff focus and jeah";
+  }
+
+  document.getElementById('charInput').onselect = function(event) {
+    document.getElementById('keyData').innerHTML = "Imput gaied stuff selected and valt du vet";
+  }
+
+  document.getElementById('logoButton').onclick = function(event) {
+    document.getElementById('logo').className = "show";
+  }
+
+  document.getElementById('logo').onmouseover = function(event) {
+    document.getElementById('log').innerHTML = "Imput gaied stuff focus and jeah";
+  }
+
+
+  </script>
+
+
+</body>
 </html>
